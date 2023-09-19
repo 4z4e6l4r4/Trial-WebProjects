@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        strong{
+            /* tag değerine style verme */
+            font-size: 40px;
+        }
+#yasir {
+    /* ıd e style  verme */
+    font-size: 15px;
+    color: brown;
+}
+
+em{
+    /* tüm em e taglarına style verme */
+    font-size: 50px;}
+
+em:last-of-type{
+
+    color: darkgreen;
+}
+
+.paragraf { 
+    /* classa değer verme */
+font-family: 'Courier New', Courier, monospace;
+font-weight: bold;
+
+}
+
+    </style>
+
+
+<!-- dışardaki css dosyasını html bağlamak için -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- div blok yapısı : divler için muhakkak css kullanmak zorundayız-->
+    <div style="width: 25%; background-color: aquamarine; color: blueviolet; float: left;">
+        Azra
+
+    </div>
+
+    <div style="width: 25%; background-color: bisque; color: brown; float: left;">
+        Azra
+    </div>
+    <div style="width: 25%; background-color: aquamarine; color: blueviolet; float: left;">
+        Azra
+
+    </div>
+
+    <div style="width: 25%; background-color: bisque; color: brown; float: left;">
+        Azra
+    </div>
+
+
+<!-- CCS USAGE -->
+<!-- Css kullanırken tag, id ya da class ile kullan. -->
+
+<!-- 
+     FARKLI STYLE KULLANIMLARI
+    1. Tag içi style kullanımı
+    2. Site içi head>style kullanımı
+    3. site dışı .css dosyası ile style kullanımı [Önceki tag ile oluşturulan sitelrei düzeltmek için]
+ 
++ aynı ID i yalnızca bir yerde kullanılır
+bu yüzden style için ID tercih etme class kullan
+-->
+
+
+<strong style="color: blueviolet;"> Erhan Kaya</strong><br>
+<em id="yasir">Yasir Akkaya</em>
+
+<em>Meryem</em>
+<p class="paragraf"> Lorem ipsum dolor sit, 
+    amet consectetur adipisicing elit. Exercitationem, perspiciatis.</p>
+
+<h3 id="baslik">Konu Başlığı </h3>
+<hr>
+<p class="yazi">Lorem ipsum dolor sit amet.</p>
+
+<h2 id="baslik"> ÜLKELER</h2>
+
+<div class="kare">
+
+</div>
+<br><br><br>
+<a href="https:/www.google" class="link"> Google</a>
+
+
+
+
+
+
+
+
+<br><br><br><br><br>
+</body>
+
+</html>

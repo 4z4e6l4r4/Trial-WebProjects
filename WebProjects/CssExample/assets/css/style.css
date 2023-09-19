@@ -1,0 +1,123 @@
+.menu {}
+
+.menu .menu-item {
+    display: inline;
+
+    /* tek satırda yazdırmak için:
+    display yaparsan liste başındaki noktaları kaldırmak için list style: none yerine kullanıp menüdeki içerikleri de yan yana getirmiş olursun */
+}
+
+.menu .menu-item .menu-item-link {
+    /* .menu .menu-item a yazılabilirdi ama bu menu item deki bütün a ları etkileyeceği için bunu seçmek dezavantajlı olabilir */
+    text-decoration: none;
+    color: black;
+    /* .menu-item da yapılabilir ama a üzerinde yapman daha iyi çünkü doğrudan kendi layerında
+ */
+    background-color: blanchedalmond;
+    margin: 5px;
+    /* kutucuklara ayırır */
+    padding: 2px 10px;
+    /* hacimli ve dolgulu saçlar sry hacim */
+    border-radius: 3px;
+    /* köşeleri yumuşat */
+}
+
+.menu .menu-item .menu-item-link:hover {
+    background-color: rgba(220, 20, 60, 0.384);
+    color: rgb(252, 255, 240);
+}
+
+
+.menu .menu-item .menu-item-link i {
+    color: red;
+}
+
+.menu .menu-item .galeri {
+    background-color: blueviolet;
+}
+
+/* CSS COLOR */
+.box {
+    background-color: rgb(139, 138, 138);
+    color: red;
+    color: rgb(red, green, blue);
+    /* 0-255
+    cırmızı için: 255,0,0 */
+    color: #0008ff;
+    /* 00-ff
+#f00 = #ff0000 */
+    color: rgba(0, 251, 255, 0.5);
+    /* saydam yapmak için kesirli alphaya değer ver */
+
+    border: 2px #4000ff dotted;
+    text-shadow: 1px 1px 2px 2px black;
+    box-shadow: 1px 1px 2px 2px black;
+}
+
+/* CSS FONT */
+.box {
+    font-size: 60px;
+    /* en çok pt,px ve em kullanılır */
+    font-weight: 700 bolder;
+    /* font kalınlık 100-900*/
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-size-adjust: 36px;
+    /* adjust responsive yapıya daha uygun */
+
+    font-language-override: inherit;
+
+}
+
+/* CSS  BORDER */
+.box {
+    border-bottom: 5px dashed;
+    border-style: double;
+    border-color: aquamarine;
+    border-radius: 25px 0 25px 0;
+}
+
+/* margin-padding */
+
+.margin1 {
+    height: 200px;
+    width: 200рх;
+    background-color: blue;
+    margin-top: 20px;
+    margin-left: 30px;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.margin2 {
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    float: right;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin: 20px 30px 20px 30px;
+}
+
+.haberler {
+    width: calc(100% - 50px);
+    margin: 25px;
+    float: left;
+}
+
+.haberler .haber {
+    width: calc(25% - 60px);
+    padding: 20px;
+    float: left;
+    margin: 0px 10px;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+
+.haberler .haber img {
+    width: 100%;
+    border-radius: 5px;
+
+}

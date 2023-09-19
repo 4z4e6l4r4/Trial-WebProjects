@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+</head>
+<body>
+    <!--FORM USAGE AND ELEMENTS-->
+    <form method="get" action="giris.html"><!--Get, Url ile istenilen action(Sayfa) veri taşıma veya gönderme işlemleri yapar-->
+        <input type="text" id="username" name="username" placeholder="Enter Username">
+        <input type="text" id="password" name="password" placeholder="Enter Password">
+        <input type="submit" value="Giriş Yap">
+
+    </form>
+    <form method="post" action="giris.html" enctype=""><!--Post, veriyi bir paket halinde istenilen action(sayfa)'a iletmemize yarar-->
+        <input type="text" id="username" name="username" placeholder="Enter Username">
+        <input type="text" id="password" name="password" placeholder="Enter Password">
+        <input type="submit" value="Giriş Yap">
+    </form>
+
+    <form>
+        <input type="text">
+        <input type="number">
+        <input type="datetime-local">
+        <input type="radio">
+        <input type="checkbox">
+        <input type="color">
+        <input type="time">
+        <input type="email">
+        
+        <input type="password">
+        <input type="text" required>
+        <input type="text" value="Erhan" maxlength="10">
+        <input type="number" min="-3" max="12" value="2">
+        <input type="text" placeholder="Hayelet Yazı">
+        <input type="text" value="Erhan" disabled>
+        <textarea cols="40" rows="10">Merhaba Textarea</textarea>
+
+
+        <select>
+            <option>Arabalar</option>
+            <option>Uçaklar</option>
+            <option>Villalar</option>
+            <option>Motorsikletler</option>
+        </select>
+        <select multiple>
+            <option>Arabalar</option>
+            <option>Uçaklar</option>
+            <option>Villalar</option>
+            <option>Motorsikletler</option>
+        </select>
+        <select>
+            <option disabled>Taşınabilirler</option>
+            <optgroup>
+                <option>Arabalar</option>
+                <option>Uçaklar</option>
+            </optgroup>
+            <option disabled>Taşınamazlar</option>
+            <optgroup>
+                <option>Villalar</option>
+                <option>Köşkler</option>
+            </optgroup>
+            
+        </select>
+        <input type="submit">
+        <input type="button" value="Tıkla">
+        <button type="button">Button</button>
+        <button type="submit">Gönder</button>
+    </form>
+</body>
+</html>
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>
